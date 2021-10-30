@@ -19,12 +19,11 @@ def ER(n, p):
 
     return g
 
-print('hello world')
-
-n = 100
+n = 150
 p = 0.4
 G = ER(n, p)
-python_file = open("welsh_powell_input.txt", "w")
+python_file = open("fleury_input.txt", "w")
+python_file.write(str(n)+'\n')
 for node1, node2 in G.edges():
     data = str(node1) + ' '+ str(node2) + '\n'
     python_file.write(data)
